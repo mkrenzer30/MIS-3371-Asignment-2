@@ -1,0 +1,226 @@
+ <!DOCTYPE html>
+<html>
+<!--
+Program name: patient-form.html
+Author: Matthew Krenzer
+Date created: 09/12/2024
+Date last edited: 09/21/2024
+Version: 1.2
+Description: a brief summary of what the document is.
+-->
+<head>
+<!-- Link to Styles.css sheet -->
+<link rel="stylesheet" href="styles.css">
+<!-- Input image --> 
+<img src="Memorial-Hermann-Logo.png" style="width:300px;height:100px;">
+<h1>Please fill out the following patient-form:</h1>
+<head>    
+    <body>
+        
+
+    
+    <!-- Form Starts Here -->
+    <form action="homework1-thankyou.html">
+        <!-- table -->
+        <div>
+         <table>
+  
+        <tr>
+            <!-- First Name -->
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" id="fname" name="fname" maxlength="30" placeholder="John" required></td>
+            <!-- Middle Initial-->
+            <td><label for="middle">Middle Initial:</label></td>
+            <td><input type="text" id="middle" name="middle_initial" maxlength="1" size="1"></td>
+            <!-- Last Name -->
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" id="lname" name="lname" maxlength="30" placeholder="Doe" required></td><p> 
+        </tr>
+        
+        <tr>
+            <!-- Date of Birth -->
+            <td><label for="DOB"> D.O.B.:</label></td>
+            <td><input type="date" name="DOB" id="DOB" placeholder="MM/DD/YYYY" required></td><p>
+        </tr>
+
+        <tr>
+            <!-- Social Security Number -->
+            <td><label for="SSN"> SSN:</label></td>
+            <td><input type="password" name="SSN" id="SSN" maxlength="11" required></td> <p>
+        </tr>
+
+        <tr>
+            <!-- Address Line 1 -->
+            <td><label for="Address1">Address:</label></td>
+            <td><input type="text" name="Address1" id="Adress1" maxlength="30"required></td><p>
+        </tr>
+
+        <tr>
+            <!-- Address Line 2 -->
+            <td><label for="Adress2">Address Line 2:</label></td>
+            <td><input type="text" name="Address2" maxlength="30"></td><p>
+        </tr>
+
+        <tr>
+            <!-- City -->
+            <td><label for="City">City:</label></td>
+            <td><input type="text" name="City" id="City" maxlength="30" required></td>
+            <!-- State with dropdown -->
+            <td><label for="State">State:</label></td>
+            <td><select id="State" name="State" required>
+                <option value="blank"> </option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>   
+                <option value="PR">Puerto Rico</option> 
+                <select></td>
+            <!-- Zip Code -->
+            <td><label for="Zip"> Zip Code:</label></td>
+            <td><input type="text" name="Zip" id="Zip" maxlength="5"required> </td><p>
+        </tr>
+
+        <tr>
+            <!-- Phone Number -->
+            <td><label for="phone"> Phone Number:</label></td>
+            <td><input type="text" name="phone" maxlength="15"></td><p>
+        </tr>
+
+        <tr>
+            <!-- Email  -->
+            <td><label for="Email">Email:</label></td>
+            <td><input type="email" name="email" placeholder="johndoe@domain.com"></td><p>
+        </tr>
+        </table>
+        <div>
+            <!-- Text area for symptoms -->
+            <label for="symptoms">Please describe your symptoms below:</label><br>
+            <textarea name="symptoms" rows="3" cols="50">
+                </textarea> <p>
+
+            <!-- Check Boxes  -->
+            <label for="CheckBoxes"> Check all of the following that apply <br> Have you had: </label><br>
+            <input type="checkbox" id="Chickenpox" value="Chickenpox">
+            <label for="Chickenpox"> Chickenpox</label><br>
+            <input type="checkbox" id="Measles" value="Measles">
+            <Label for="Measles"> Measles</Label><br>
+            <input type="checkbox" id="Covid-19" value="Covid-19">
+            <Label for="Covid-19"> Covid-19</Label><br>
+            <input type="checkbox" id="Small Pox" value="Small Pox">
+            <label for="Small Pox"> Small Pox</label><br>
+            <input type="checkbox" id="Tetanus" value="Tetanus">
+            <label for="Tetanus"> Tetanus</label><p>
+
+            <!-- Radio Buttons  -->
+                <!-- Gender: male; female; other -->
+                <label for="Gender"> What is your Gender?</label><br>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="Male"> Male </label><br>
+                <input type="radio" id="Female" name="Gender" value="Female">
+                <label for="Female"> Female</label><br>
+                <input type="radio" id="other" name="Gender" value="Other">
+                <label for="Other"> Other</label><p>
+
+                <!-- Vaccination -->
+                <label for="Vaccination"> Have you been vaccinated?</label><br>
+                <input type="radio" name="vaccination" value="yes">
+                <label for="Yes"> Yes</label><br>
+                <input type="radio" name="vaccination" value="No">
+                <label for="No"> No</label><p>
+
+                <!-- Inssurance  -->
+                <label for="Inssurance"> Do you have inssurance?</label><br>
+                <input type="radio" name="inssurance" value="yes">
+                <label for="Yes"> Yes</label><br>
+                <input type="radio" name="inssurance" value="No">
+                <label for="No"> No</label><p>
+
+            <!-- Slide bar  -->
+            <label for="health"> On the following scale, what is you current health level? 10 being best shape of your life.</label><br>
+            <input type="range" id="health" name="health" min="0" max="10"><p>
+        <table style="width:20%">
+
+        <tr>   
+            <!-- Username  -->
+            <td><label for="Username"> Create Username: </label></td>
+            <td><input type="text" id="username" maxlength="20" required></td><p>
+        </tr>
+
+        <tr>        
+            <!-- Password -->
+            <td><label for="Password"> Create Password:</label></td>
+            <td><input type="password" id="password" required></td><p>
+        </tr>
+
+        <tr>          
+            <!-- Re-enter Password -->
+            <td><label for="Password"> Re-enter Password:</label></td>
+            <td><input type="password" id="re-password" required></td><p>
+        </tr>
+        </table>
+
+
+             <!-- Reset Button -->
+            <input type="reset" id="Clear"  value="Clear and Start Over">  
+
+            <!-- Submit button -->    
+            <input type="submit" value="Submit"><p>
+        </form> 
+
+
+        <!-- footer -->
+        </div>
+        <input type="button" onclick="footer.html" value="Contact Us!" id="fbutton">   
+        
+        </div>
+    
+
+    </body>
+</html>
